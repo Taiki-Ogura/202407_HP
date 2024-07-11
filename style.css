@@ -1,0 +1,475 @@
+/* 全体のスタイル */
+body {
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ヘッダーのスタイル */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+p {
+  color: #345da9;
+  text-align: left;
+}
+
+.header-title {
+  color: #345da9;
+  padding: 32px;
+  cursor: pointer;
+}
+
+.header-title-description {
+  margin-top: 8px;
+  font-size: 0.8rem;
+}
+
+.header-calendar {
+  width: 100px;
+  height: 100px;
+  background-color: #345da9;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.material-symbols-outlined {
+  color: white;
+  font-size: 3rem;
+}
+.header-calendar p {
+  font-size: 0.6rem;
+  color: white;
+}
+nav {
+  background-image: url("./assets/images/top_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav ul {
+  color: white;
+  background-color: #345da9;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-align: center;
+  height: 95px;
+  border-bottom-width: 0.2px;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+nav ul li:hover {
+  background-color: #2c4f91;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* メインコンテンツのスタイル */
+main {
+  margin: 0 auto;
+}
+
+h2 {
+  border-bottom: 2px solid #345da9;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 32px;
+  color: gray;
+}
+
+#news {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 36px;
+  margin-bottom: 36px;
+  padding: 24px 36px;
+}
+
+#news h2 {
+  color: gray;
+  font-size: 1.6rem;
+  text-align: center;
+  border-bottom: 1px solid #345da9;
+  width: 65%;
+  margin: 0 auto;
+}
+/* お知らせセクション */
+#news ul {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.3rem;
+  color: gray;
+  border: 1px solid #345da9;
+  padding: 24px;
+}
+
+#news li {
+  height: 40px;
+  margin-bottom: 0.5rem;
+  border-bottom: dotted 1px;
+  font-size: 1.2rem;
+}
+
+#news li span {
+  font-size: 1rem;
+  margin-right: 12%;
+}
+
+.news-button-wrapper {
+  text-align: center;
+}
+
+/* 初めての患者様へセクション */
+
+#first-time h2 {
+  width: 100%;
+  background-color: #e5dcf3;
+  padding: 1.7rem;
+  font-size: 2rem;
+  border-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #345da9;
+}
+
+#first-time h3 {
+  font-size: 2rem;
+  color: #345da9;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.explanation {
+  display: grid;
+  grid-template-columns: 300px 400px;
+  gap: 30px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.explanation,
+.reasons {
+  margin-top: 2rem;
+}
+
+.explanation h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.explanation p {
+  font-size: 0.9rem;
+}
+.column-2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 auto;
+  justify-items: center;
+  max-width: 900px;
+}
+.reasons {
+  background: linear-gradient(to bottom, #ffffff 70%, #e5dcf3 70%);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.reasons h4 {
+  font-size: 2rem;
+  color: #345da9;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #345da9;
+  width: 340px;
+  margin: 42px auto;
+}
+
+.reason-wrapper {
+  width: 80%;
+}
+.reasons h5 {
+  font-size: 1.7rem;
+  color: #345da9;
+}
+.reason {
+  width: 350px;
+  box-shadow: -2px 1px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 36px 20px;
+  background-color: white;
+}
+
+#about {
+  background-color: #e5dcf3;
+}
+.info {
+  width: 410px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: -2px 1px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* ボタンのスタイル */
+button {
+  background-color: #345da9;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  width: 260px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: #2d4373;
+}
+
+/* 画像のスタイル */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+#services {
+  background: linear-gradient(to bottom, #e5dcf3 70%, #ffffff 70%);
+  padding: 24px 36px;
+}
+
+#services h2 {
+  width: 80%;
+  margin: 24px auto;
+}
+
+.services-inner {
+  box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 12px 36px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.services-btn {
+  margin: auto;
+  width: 90%;
+  height: 48px;
+}
+
+/* フッターのスタイル */
+footer {
+  background-color: #345da9;
+  color: white;
+  padding: 1rem 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  cursor: pointer;
+}
+
+footer li:hover {
+  background-color: #2c4f91;
+}
+
+.footer-info {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-info h3 {
+  font-size: 1.4rem;
+}
+
+.footer-info h4 {
+  font-size: 0.8rem;
+}
+
+.page-wrapper {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 30% 60%;
+  gap: 2%;
+  justify-content: center;
+  margin: 36px auto;
+}
+
+.page-wrapper nav {
+  background-image: none;
+}
+.page-wrapper nav ul {
+  width: 100%;
+}
+
+.page-wrapper #news {
+  margin: 0;
+}
+
+.page-section {
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 36px;
+  padding: 24px 36px;
+}
+.page-section h2 {
+  border: none;
+}
+.page-access {
+  padding-left: 6rem;
+  color: black;
+}
+.page-access p {
+  color: black;
+}
+.page-access h3 {
+  color: #345da9;
+  font-size: 2.8rem;
+}
+
+.info-section {
+  margin-bottom: 24px;
+}
+.info-section h4 {
+  text-align: left;
+  color: black;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.content-info {
+  margin-bottom: 24px;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-section {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    padding: 24px 18px;
+    box-shadow: none;
+  }
+  nav {
+    display: none;
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .reason {
+    width: 345px;
+    margin-bottom: 1rem;
+  }
+
+  .header-title {
+    padding: 16px;
+  }
+
+  .header-title h1 {
+    font-size: 0.8rem;
+  }
+
+  .header-title p {
+    font-size: 0.3rem;
+  }
+
+  .header-calendar {
+    height: 50px;
+    width: 50px;
+  }
+  .material-symbols-outlined {
+    font-size: 1.2rem;
+  }
+  #news {
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    padding: 24px 13px;
+  }
+  #news li {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  #news span {
+    display: none;
+  }
+  #news li span {
+    font-size: 0.4rem;
+  }
+  .explanation {
+    width: 345px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reasons {
+    background-color: white;
+  }
+  .info {
+    width: 345px;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #services {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer-info {
+    display: none;
+  }
+  .services-inner {
+    width: 345px;
+  }
+  footer {
+    padding: 1rem 2rem;
+  }
+}
