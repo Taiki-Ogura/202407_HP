@@ -135,7 +135,7 @@ h2 {
   height: 40px;
   margin-bottom: 0.5rem;
   border-bottom: dotted 1px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #news li span {
@@ -171,7 +171,7 @@ h2 {
 
 .explanation {
   display: grid;
-  grid-template-columns: 300px 400px;
+  grid-template-columns: 400px 400px;
   gap: 30px;
   margin: 0 auto;
   align-items: center;
@@ -197,6 +197,7 @@ h2 {
   margin: 0 auto;
   justify-items: center;
   max-width: 900px;
+  min-width: 750px;
 }
 .reasons {
   background: linear-gradient(to bottom, #ffffff 70%, #e5dcf3 70%);
@@ -282,8 +283,11 @@ img {
 
 .services-btn {
   margin: auto;
-  width: 90%;
   height: 48px;
+}
+
+.services-btn-wrapper {
+  display: flex;
 }
 
 /* フッターのスタイル */
@@ -320,7 +324,7 @@ footer li:hover {
 
 .page-wrapper {
   display: grid;
-  width: 90%;
+  width: 98%;
   grid-template-columns: 30% 60%;
   gap: 2%;
   justify-content: center;
@@ -348,6 +352,10 @@ footer li:hover {
 .page-section h2 {
   border: none;
 }
+.page-section h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 .page-access {
   padding-left: 6rem;
   color: black;
@@ -370,8 +378,15 @@ footer li:hover {
   padding-bottom: 5px;
 }
 
+.page-section p {
+  color: black;
+}
 .content-info {
   margin-bottom: 24px;
+}
+.page-section-about-p {
+  padding: 12px 0px;
+  font-size: 1.2rem;
 }
 
 /* レスポンシブデザイン */
