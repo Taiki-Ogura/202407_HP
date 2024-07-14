@@ -22,6 +22,7 @@ header h1 {
 p {
   color: #345da9;
   text-align: left;
+  margin-top: 12px;
 }
 
 .header-title {
@@ -43,6 +44,8 @@ p {
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  cursor: pointer;
 }
 .material-symbols-outlined {
   color: white;
@@ -355,6 +358,8 @@ footer li:hover {
 .page-section h4 {
   font-size: 1.2rem;
   font-weight: bold;
+
+  margin: 12px 0px;
 }
 .page-access {
   padding-left: 6rem;
@@ -387,6 +392,10 @@ footer li:hover {
 .page-section-about-p {
   padding: 12px 0px;
   font-size: 1.2rem;
+}
+
+.page-section-about-description {
+  font-size: 2.2rem;
 }
 
 .header-hamburger {
@@ -449,6 +458,7 @@ footer li:hover {
   .header-hamburger p {
     font-size: 0.5rem;
     color: white;
+    margin: 0px;
   }
   .header-hamburger:hover + nav {
     display: block;
@@ -468,10 +478,12 @@ footer li:hover {
   .header-calendar {
     height: 50px;
     width: 50px;
+    margin: 0px;
     margin-right: 2px;
   }
   .header-calendar p {
     font-size: 0.3rem;
+    margin: 0px;
   }
   .material-symbols-outlined {
     font-size: 2rem;
@@ -518,6 +530,10 @@ footer li:hover {
     background-color: white;
     text-align: center;
     margin: 0 auto;
+  }
+
+  .services-btn {
+    margin: 12px 0px;
   }
 
   .footer-info {
