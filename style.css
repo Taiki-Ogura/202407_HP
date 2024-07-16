@@ -454,8 +454,34 @@ footer li:hover {
 .header-hamburger {
   display: none;
 }
+.swiper {
+  display: none; /* デフォルトで非表示 */
+  width: 100%;
+  height: 200px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
+  .swiper {
+    display: block;
+  }
   .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -476,10 +502,12 @@ footer li:hover {
     display: none;
     position: fixed;
     right: 0;
-    top: 60px;
+    top: 70px;
     width: 75%;
     background-color: #345da9;
     z-index: 1000;
+    background-image: none;
+    padding-top: 0px;
   }
 
   nav.show {
