@@ -1,6 +1,6 @@
 /* 全体のスタイル */
 body {
-  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  font-family: Meiryo UI, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -13,6 +13,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-right: 2rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
 }
 header h1 {
   margin: 0;
@@ -28,12 +32,15 @@ p {
 .header-title {
   color: #345da9;
   padding: 32px;
+}
+
+.header-title h1 {
   cursor: pointer;
 }
 
 .header-title-description {
   margin-top: 8px;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .header-calendar {
@@ -58,9 +65,13 @@ p {
 nav {
   background-image: url("./assets/images/top_bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
-}
 
+  background-size: cover;
+  padding-top: 157px;
+}
+.clickable-phone {
+  cursor: pointer;
+}
 nav ul {
   color: white;
   background-color: #345da9;
@@ -101,15 +112,17 @@ h2 {
   border-bottom: 2px solid #345da9;
   padding-bottom: 0.5rem;
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
   color: gray;
+  margin: 24px auto;
 }
 
 #news {
   width: 95%;
   max-width: 1000px;
   margin: 0 auto;
-  box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
   margin-top: 36px;
   margin-bottom: 36px;
   padding: 24px 36px;
@@ -142,6 +155,47 @@ h2 {
 }
 
 #news li span {
+  font-size: 1rem;
+  margin-right: 12%;
+}
+
+.page-section-news {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 36px;
+  padding: 24px 36px;
+}
+
+.page-section-news h2 {
+  color: gray;
+  font-size: 1.6rem;
+  text-align: center;
+  border-bottom: 1px solid #345da9;
+  width: 65%;
+  margin: 0 auto;
+}
+/* お知らせセクション */
+.page-section-news ul {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.3rem;
+  color: gray;
+  border: 1px solid #345da9;
+  padding: 24px;
+}
+
+.page-section-news li {
+  height: 40px;
+  margin-bottom: 0.5rem;
+  border-bottom: dotted 1px;
+  font-size: 1.1rem;
+}
+
+.page-section-news li span {
   font-size: 1rem;
   margin-right: 12%;
 }
@@ -228,7 +282,7 @@ h2 {
 }
 .reason {
   width: 350px;
-  box-shadow: -2px 1px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
   padding: 36px 20px;
   background-color: white;
 }
@@ -237,10 +291,10 @@ h2 {
   background-color: #e5dcf3;
 }
 .info {
-  width: 410px;
+  width: 350px;
   padding: 20px;
   background-color: white;
-  box-shadow: -2px 1px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 /* ボタンのスタイル */
@@ -253,6 +307,7 @@ button {
   width: 260px;
   text-align: center;
   border-radius: 12px;
+  margin-top: 12px;
 }
 
 button:hover {
@@ -277,7 +332,7 @@ img {
 }
 
 .services-inner {
-  box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
   background-color: white;
   padding: 12px 36px;
   max-width: 900px;
@@ -322,7 +377,8 @@ footer li:hover {
 }
 
 .footer-info h4 {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  text-align: left;
 }
 
 .page-wrapper {
@@ -341,16 +397,13 @@ footer li:hover {
   width: 100%;
 }
 
-.page-wrapper #news {
-  margin: 0;
-}
-
 .page-section {
   width: 95%;
   margin: 0 auto;
-  box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 36px;
   padding: 24px 36px;
+  margin-top: 156px;
 }
 .page-section h2 {
   border: none;
@@ -378,13 +431,13 @@ footer li:hover {
 }
 .info-section h4 {
   text-align: left;
-  color: black;
+  color: #345da9;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
 }
 
 .page-section p {
-  color: black;
+  color: #345da9;
 }
 .content-info {
   margin-bottom: 24px;
@@ -416,6 +469,9 @@ footer li:hover {
     box-shadow: none;
   }
 
+  main {
+    margin-top: 71px;
+  }
   nav {
     display: none;
     position: fixed;
@@ -472,7 +528,7 @@ footer li:hover {
   }
 
   .header-title p {
-    font-size: 0.3rem;
+    font-size: 0.5rem;
   }
 
   .header-calendar {
@@ -502,6 +558,21 @@ footer li:hover {
     display: none;
   }
   #news li span {
+    font-size: 0.4rem;
+  }
+  .page-section-news {
+    margin: 0 auto;
+    margin-bottom: 36px;
+    padding: 24px 13px;
+  }
+  .page-section-news li {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .page-section-news span {
+    display: none;
+  }
+  .page-section-news li span {
     font-size: 0.4rem;
   }
   .explanation {

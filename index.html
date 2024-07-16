@@ -29,12 +29,14 @@
 
   <body>
     <header>
-      <div class="header-title" onclick="location.href='./index.html'">
-        <h1>麻布セントラルクリニック</h1>
+      <div class="header-title">
+        <h1 onclick="location.href='./index.html'">麻布セントラルクリニック</h1>
         <p class="header-title-description">
-          受付時間
-          10:00～12:00・14:00～18:00　日曜・祝日・木曜日休診　当院はWEB予約優先制です
-          Tel. 03-6447-0758
+          受付時間 10:00～12:00・14:00～18:00　日曜・祝日・木曜日休診　<br />当院はWEB予約優先制です
+
+          <span class="clickable-phone" onclick="confirmCall('03-6447-0758')"
+            >Tel. 03-6447-0758</span
+          >
         </p>
       </div>
       <div class="header-menu">
@@ -58,7 +60,7 @@
           <a>お知らせ</a>
         </li>
 
-        <li onclick="location.href='./first-time.html'">
+        <li onclick="location.href='./index.html#first-time'">
           <a>初めての患者様へ</a>
         </li>
 
@@ -70,8 +72,10 @@
           <a>アクセス</a>
         </li>
 
-        <li onclick="location.href='https://azabustcl.b4a.clinic/'">
-          <a>ご予約・お問い合わせ</a>
+        <li>
+          <a href="https://azabustcl.b4a.clinic/" target="_blank"
+            >ご予約・お問い合わせ</a
+          >
         </li>
       </ul>
     </nav>
@@ -80,12 +84,7 @@
       <section id="news">
         <h2>お知らせ</h2>
         <ul>
-          <li><span>2024.06.01</span>6月度における診療時間のお知らせ</li>
-          <li><span>2024.06.01</span>6月度における診療時間のお知らせ</li>
-          <li><span>2024.06.01</span>6月度における診療時間のお知らせ</li>
-          <li><span>2024.06.01</span>6月度における診療時間のお知らせ</li>
-          <li><span>2024.06.01</span>6月度における診療時間のお知らせ</li>
-          <li><span>2024.06.01</span>6月度における診療時間のお知らせ</li>
+          <li><span>2024.06.01</span>HP開設のお知らせ</li>
         </ul>
         <div class="news-button-wrapper">
           <button onclick="location.href='./news.html'">
@@ -96,7 +95,7 @@
 
       <section id="first-time">
         <h2>初めての患者様へ</h2>
-        <h3>幹細胞技術による最先端の美容医療</h3>
+        <h3>幹細胞技術による<br />最先端の美容医療</h3>
         <div class="explanation">
           <div>
             <h4>幹細胞って？</h4>
@@ -193,9 +192,7 @@
       <div class="footer-info">
         <h3>麻布セントラルクリニック</h3>
         <h4>
-          受付時間
-          10:00～12:00・14:00～18:00　日曜・祝日・木曜日休診　当院はWEB予約優先制です
-          Tel. 03-6447-0758
+          受付時間 10:00～12:00・14:00～18:00　日曜・祝日・木曜日休診　<br />当院はWEB予約優先制です
         </h4>
       </div>
     </footer>

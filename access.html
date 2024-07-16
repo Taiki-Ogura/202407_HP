@@ -49,19 +49,24 @@
 
   <body>
     <header>
-      <div class="header-title" onclick="location.href='./index.html'">
-        <h1>麻布セントラルクリニック</h1>
+      <div class="header-title">
+        <h1 onclick="location.href='./index.html'">麻布セントラルクリニック</h1>
         <p class="header-title-description">
-          受付時間
-          10:00～12:00・14:00～18:00　日曜・祝日・木曜日休診　当院はWEB予約優先制です
-          Tel. 03-6447-0758
+          受付時間 10:00～12:00・14:00～18:00　日曜・祝日・木曜日休診　<br />当院はWEB予約優先制です
+
+          <span class="clickable-phone" onclick="confirmCall('03-6447-0758')"
+            >Tel. 03-6447-0758</span
+          >
         </p>
       </div>
       <div class="header-menu">
-        <div class="header-calendar">
+        <div
+          class="header-calendar"
+          onclick="location.href='https://azabustcl.b4a.clinic/'"
+        >
           <span class="material-symbols-outlined">calendar_month </span>
 
-          <p><a href="https://azabustcl.b4a.clinic/">ご予約はこちらから</a></p>
+          <p>ご予約はこちらから</p>
         </div>
         <div class="header-hamburger">
           <span class="material-symbols-outlined">menu</span>
@@ -76,7 +81,7 @@
             <a>お知らせ</a>
           </li>
 
-          <li onclick="location.href='./first-time.html'">
+          <li onclick="location.href='./index.html#first-time'">
             <a>初めての患者様へ</a>
           </li>
 
@@ -88,8 +93,10 @@
             <a>アクセス</a>
           </li>
 
-          <li onclick="location.href='https://azabustcl.b4a.clinic/'">
-            <a>ご予約・お問い合わせ</a>
+          <li>
+            <a href="https://azabustcl.b4a.clinic/" target="_blank"
+              >ご予約・お問い合わせ</a
+            >
           </li>
         </ul>
       </nav>

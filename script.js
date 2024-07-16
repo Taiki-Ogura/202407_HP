@@ -23,3 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+function confirmCall(phoneNumber) {
+  if (confirm("電話をかけますか？")) {
+    window.location.href = "tel:" + phoneNumber;
+  }
+}
