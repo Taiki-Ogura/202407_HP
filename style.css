@@ -387,7 +387,7 @@ footer li:hover {
   grid-template-columns: 30% 60%;
   gap: 2%;
   justify-content: center;
-  margin: 36px auto;
+  margin: 86px auto;
 }
 
 .page-wrapper nav {
@@ -457,7 +457,7 @@ footer li:hover {
 .swiper {
   display: none; /* デフォルトで非表示 */
   width: 100%;
-  height: 200px;
+  height: 400px;
   background-color: #f0f0f0;
   text-align: center;
 }
@@ -623,6 +623,9 @@ footer li:hover {
     flex-direction: column;
     align-items: center;
     min-width: 0;
+  }
+  .reasons h5 {
+    text-align: center;
   }
 
   #services {
