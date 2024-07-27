@@ -486,7 +486,6 @@ footer li:hover {
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
   .swiper {
-    z-index: -1;
     display: block;
   }
   .page-wrapper {
@@ -531,6 +530,7 @@ footer li:hover {
 
   header {
     padding-right: 1rem;
+    z-index: 99;
   }
   .header-menu {
     display: flex;

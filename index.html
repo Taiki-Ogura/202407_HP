@@ -86,15 +86,16 @@
 
     <main>
       <!-- Slider main container -->
-      <div class="swiper mySwiper">
+      <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide"><img src="assets/images/top_bg.png" /></div>
           <div class="swiper-slide"><img src="assets/images/top_bg.png" /></div>
           <div class="swiper-slide"><img src="assets/images/top_bg.png" /></div>
-          <div class="swiper-pagination"></div>
         </div>
+
+        <div class="swiper-pagination"></div>
       </div>
       <section id="news">
         <h2>お知らせ</h2>
@@ -211,16 +212,17 @@
         </h4>
       </div>
     </footer>
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".swiper", {
         pagination: {
           el: ".swiper-pagination",
         },
       });
     </script>
+
+    <script src="script.js"></script>
   </body>
 </html>
