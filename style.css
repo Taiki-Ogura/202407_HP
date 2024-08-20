@@ -3,7 +3,7 @@ body {
   font-family: Meiryo UI, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: gray;
   line-height: 1.6;
 }
 
@@ -17,6 +17,7 @@ header {
   top: 0;
   background-color: white;
   width: 100%;
+  z-index: 2;
 }
 header h1 {
   margin: 0;
@@ -24,14 +25,17 @@ header h1 {
 }
 
 p {
-  color: #345da9;
+  color: gray;
   text-align: left;
   margin-top: 12px;
+}
+.sp-display {
+  display: none;
 }
 
 .header-title {
   color: #345da9;
-  padding: 32px;
+  padding: 8px 32px;
 }
 
 .header-title h1 {
@@ -39,13 +43,14 @@ p {
 }
 
 .header-title-description {
-  margin-top: 8px;
-  font-size: 1rem;
+  margin-top: 0px;
+  font-size: 0.8rem;
+  color: #345da9;
 }
 
 .header-calendar {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-color: #345da9;
   justify-content: center;
   align-items: center;
@@ -59,15 +64,13 @@ p {
   font-size: 3rem;
 }
 .header-calendar p {
+  margin-top: 4px;
   font-size: 0.6rem;
   color: white;
 }
 nav {
-  background-image: url("./assets/images/top_bg.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  padding-top: 157px;
+  display: flex;
+  padding-top: 145px;
 }
 .clickable-phone {
   cursor: pointer;
@@ -81,6 +84,7 @@ nav ul {
   flex-direction: column;
   width: 35%;
   cursor: pointer;
+  height: 474px;
 }
 
 nav ul li {
@@ -159,23 +163,12 @@ h2 {
   margin-right: 12%;
 }
 
-.page-section-news {
-  width: 95%;
-  max-width: 1000px;
-  margin: 0 auto;
-
-  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 36px;
-  padding: 24px 36px;
-}
-
 .page-section-news h2 {
   color: gray;
   font-size: 1.6rem;
   text-align: center;
   border-bottom: 1px solid #345da9;
   width: 65%;
-  margin: 0 auto;
 }
 /* お知らせセクション */
 .page-section-news ul {
@@ -215,12 +208,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #345da9;
 }
 
 #first-time h3 {
   font-size: 2rem;
-  color: #345da9;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -264,7 +255,7 @@ h2 {
 
 .reasons h4 {
   font-size: 2rem;
-  color: #345da9;
+  color: gray;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -278,7 +269,7 @@ h2 {
 }
 .reasons h5 {
   font-size: 1.7rem;
-  color: #345da9;
+  color: gray;
 }
 .reason {
   width: 350px;
@@ -387,7 +378,6 @@ footer li:hover {
   grid-template-columns: 30% 60%;
   gap: 2%;
   justify-content: center;
-  margin: 86px auto;
 }
 
 .page-wrapper nav {
@@ -403,7 +393,7 @@ footer li:hover {
   box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 36px;
   padding: 24px 36px;
-  margin-top: 156px;
+  padding-top: 90px;
 }
 .page-section h2 {
   border: none;
@@ -414,38 +404,23 @@ footer li:hover {
 
   margin: 12px 0px;
 }
-.page-access {
-  padding-left: 6rem;
-  color: black;
-}
-.page-access p {
-  color: black;
-}
-.page-access h3 {
-  color: #345da9;
-  font-size: 2.8rem;
-}
 
 .info-section {
   margin-bottom: 24px;
 }
 .info-section h4 {
   text-align: left;
-  color: #345da9;
+  color: gray;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
 }
 
-.page-section p {
-  color: #345da9;
-}
 .content-info {
   margin-bottom: 24px;
 }
 .page-section-about-p {
   padding: 12px 0px;
   font-size: 1.2rem;
-  color: black !important;
 }
 
 .page-section-about-description {
@@ -461,9 +436,8 @@ footer li:hover {
   display: none;
 }
 .swiper {
-  display: none; /* デフォルトで非表示 */
   width: 100%;
-  height: 400px;
+  height: 474px;
   background-color: #f0f0f0;
   text-align: center;
 }
@@ -488,16 +462,15 @@ footer li:hover {
   .swiper {
     display: block;
   }
+  .pc-display {
+    display: none;
+  }
   .page-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .page-section {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 36px;
-    padding: 24px 18px;
     box-shadow: none;
   }
 
@@ -529,7 +502,7 @@ footer li:hover {
   }
 
   header {
-    padding-right: 1rem;
+    padding-right: 9px;
     z-index: 99;
   }
   .header-menu {
@@ -594,11 +567,6 @@ footer li:hover {
   }
   #news li span {
     font-size: 0.4rem;
-  }
-  .page-section-news {
-    margin: 0 auto;
-    margin-bottom: 36px;
-    padding: 24px 13px;
   }
   .page-section-news li {
     font-size: 0.9rem;
