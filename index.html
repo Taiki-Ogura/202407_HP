@@ -50,7 +50,7 @@
         >
           <span class="material-symbols-outlined">calendar_month </span>
 
-          <p>ご予約はこちらから</p>
+          <p>ご予約は<br />こちらから</p>
         </div>
         <div class="header-hamburger">
           <span class="material-symbols-outlined">menu</span>
@@ -89,8 +89,12 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide"><img src="assets/images/top_bg.png" /></div>
-          <div class="swiper-slide"><img src="assets/images/top_bg.png" /></div>
-          <div class="swiper-slide"><img src="assets/images/top_bg.png" /></div>
+          <div class="swiper-slide">
+            <img src="assets/images/slide_2.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/slide_3.jpeg" />
+          </div>
         </div>
 
         <div class="swiper-pagination"></div>
@@ -104,8 +108,12 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide"><img src="assets/images/top_bg.png" /></div>
-          <div class="swiper-slide"><img src="assets/images/top_bg.png" /></div>
-          <div class="swiper-slide"><img src="assets/images/top_bg.png" /></div>
+          <div class="swiper-slide">
+            <img src="assets/images/slide_2.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/slide_3.jpeg" />
+          </div>
         </div>
 
         <div class="swiper-pagination"></div>
@@ -232,6 +240,9 @@
       var swiper = new Swiper(".swiper", {
         pagination: {
           el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 8000,
         },
       });
     </script>
